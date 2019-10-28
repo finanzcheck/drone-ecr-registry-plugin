@@ -3,7 +3,7 @@ name: drone-ecr-registry-plugin
 
 workspace:
   base: /go
-  path: src/github.com/davidbyttow/drone-ecr-registry-plugin
+  path: src/github.com/finanzcheck/drone-ecr-registry-plugin
 
 steps:
 - name: test
