@@ -31,6 +31,7 @@ steps:
     registry: 873922239110.dkr.ecr.eu-central-1.amazonaws.com
     region: eu-central-1
     repo: 873922239110.dkr.ecr.eu-central-1.amazonaws.com/drone-ecr-registry-plugin
+    dockerfile: docker/Dockerfile
     tags:
     - latest
     - "git_${DRONE_COMMIT_SHA:0:8}"
