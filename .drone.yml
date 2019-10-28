@@ -6,6 +6,13 @@ workspace:
   path: src/github.com/finanzcheck/drone-ecr-registry-plugin
 
 steps:
+
+- name: promtool / validation
+  group: validate
+  image: 873922239110.dkr.ecr.eu-central-1.amazonaws.com/ti-jenkins-toolbox
+  commands:
+   - echo test
+
 - name: test
   image: golang:latest
   environment:
@@ -24,12 +31,6 @@ steps:
     event:
       - push
       - pull_request
-
-- name: promtool / validation
-  group: validate
-  image: 873922239110.dkr.ecr.eu-central-1.amazonaws.com/ti-jenkins-toolbox
-  commands:
-   - echo test
 
 - name: publish
   image: plugins/ecr
