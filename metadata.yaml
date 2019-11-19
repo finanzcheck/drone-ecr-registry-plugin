@@ -1,0 +1,4 @@
+type: ignore
+description: Drone Plugin to enable role based ecr auth
+owners:
+  - team.techops@finanzcheck.de
